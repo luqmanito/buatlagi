@@ -3,7 +3,7 @@ const express = require("express");
 const postgreDb = require("./src/config/postgre");
 const mainRouter = require("./src/routes/main");
 const server = express();
-const PORT = 8070;
+const PORT = 8050;
 const morgan = require("morgan")
 const cors = require("cors");
 server.use(cors());
