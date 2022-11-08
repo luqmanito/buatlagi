@@ -13,10 +13,10 @@ const corsOptions = {
   origin: "*",
 };
 
-postgreDb
-  .connect()
-  .then(() => {
-    console.log("DB is connected");
+// postgreDb
+//   .connect()
+//   .then(() => {
+//     console.log("DB is connected");
     server.use(cors(corsOptions));
 
     server.use(express.static("./uploads"));
@@ -37,7 +37,7 @@ postgreDb
     server.listen(PORT, () => {
       console.log(`server is running at port ${PORT}`);
     });
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+  // })
+  // .catch((err) => {
+  //   console.error(err);
+  // });
